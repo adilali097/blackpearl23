@@ -6,40 +6,42 @@ import {
   Shield, 
   FileText, 
   TrendingUp, 
-  Users 
+  Users,
+  Building2,
+  Award
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Scale,
-      title: "Legal Consulting",
-      description: "Expert legal guidance to navigate complex legal matters with confidence and clarity."
-    },
-    {
-      icon: Calculator,
-      title: "Financial Advisory",
-      description: "Strategic financial planning and advisory services tailored to your goals."
-    },
-    {
-      icon: Shield,
-      title: "Risk Management",
-      description: "Comprehensive risk assessment and mitigation strategies for your business."
-    },
-    {
-      icon: FileText,
-      title: "Contract Review",
-      description: "Thorough contract analysis and negotiation to protect your interests."
+      icon: Users,
+      title: "Consultancy and Advisory Services",
+      description: "Expert guidance to aid informed decision-making for businesses and individuals."
     },
     {
       icon: TrendingUp,
-      title: "Investment Planning",
-      description: "Strategic investment advice to help grow and protect your wealth."
+      title: "Business Structuring",
+      description: "Conducting market analysis, project reports, investor pitches, valuations, audits, and aiding in fundraising."
     },
     {
-      icon: Users,
-      title: "Corporate Law",
-      description: "Complete corporate legal services from formation to compliance and beyond."
+      icon: Building2,
+      title: "Entity Registration Services",
+      description: "Assisting in choosing the right organizational structure. Includes: Partnership, LLP, and Company Registrations; Entity Conversions."
+    },
+    {
+      icon: Award,
+      title: "Licenses and Registrations",
+      description: "Facilitating registrations for trademarks, copyrights, patents, ISO, GST, Start-ups, IEC, FSSAI, RERA, MSME, and Property."
+    },
+    {
+      icon: FileText,
+      title: "Business Agreements' Documentation",
+      description: "Crafting crucial legal documents for business clarity and protection. Includes: Rental Agreements, Partnership Deeds, MOUs, Franchise Agreements, Investor Agreements, Share Purchase Agreements, Distribution Agreements, Settlement Deeds, Power Of Attorneys, Joint Venture Agreements, Take Over Agreements, Brand Endorsement Agreements."
+    },
+    {
+      icon: Scale,
+      title: "Litigation, Arbitration, and Settlement",
+      description: "Resolving legal disputes within or involving companies."
     }
   ];
 
