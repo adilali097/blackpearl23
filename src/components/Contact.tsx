@@ -1,9 +1,7 @@
-
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -13,24 +11,23 @@ const Contact = () => {
     services: "",
     message: ""
   });
-
   const serviceOptions = ["Legal Consulting", "Financial Advisory", "Risk Management", "Contract Review", "Investment Planning", "Corporate Law"];
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email) {
       toast.error("Please fill in all required fields");
       return;
     }
-
     const message = `New contact form submission:
 
 Name: ${formData.name}
@@ -39,13 +36,10 @@ Company Name: ${formData.companyName || 'Not specified'}
 Phone Number: ${formData.phoneNumber || 'Not specified'}
 Services: ${formData.services || 'Not specified'}
 Message: ${formData.message || 'No message provided'}`;
-
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/919048191616?text=${encodedMessage}`;
-    
     window.open(whatsappUrl, '_blank');
     toast.success("Redirecting to WhatsApp to send your message!");
-    
     setFormData({
       name: "",
       email: "",
@@ -55,9 +49,7 @@ Message: ${formData.message || 'No message provided'}`;
       message: ""
     });
   };
-
-  return (
-    <section id="contact" className="w-full bg-black py-12 sm:py-16 lg:py-20">
+  return <section id="contact" className="w-full bg-black py-12 sm:py-16 lg:py-20">
       <div className="mobile-container">
         <div className="max-w-4xl mx-auto text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 animate-on-scroll px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 sm:mb-6">
@@ -83,9 +75,7 @@ Message: ${formData.message || 'No message provided'}`;
             <div className="bg-gray-900 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg border border-gray-700">
               <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 md:space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-white mb-1 sm:mb-2">
-                    Name *
-                  </label>
+                  <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-white mb-1 sm:mb-2">Company name *</label>
                   <Input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full bg-gray-800 border-gray-600 text-white min-h-[48px] text-sm sm:text-base focus:ring-2 focus:ring-white focus:border-transparent" required />
                 </div>
                 
@@ -150,20 +140,14 @@ Message: ${formData.message || 'No message provided'}`;
                 
                 <div className="text-center lg:text-left">
                   <h5 className="font-semibold text-white mb-2 sm:mb-3 text-base sm:text-lg">Email</h5>
-                  <a 
-                    href="mailto:Hello@blackpearlassociates.com" 
-                    className="text-white hover:text-gray-300 transition-colors duration-300 text-sm sm:text-base md:text-lg touch-target inline-block break-all hover:underline"
-                  >
+                  <a href="mailto:Hello@blackpearlassociates.com" className="text-white hover:text-gray-300 transition-colors duration-300 text-sm sm:text-base md:text-lg touch-target inline-block break-all hover:underline">
                     Hello@blackpearlassociates.com
                   </a>
                 </div>
                 
                 <div className="text-center lg:text-left">
                   <h5 className="font-semibold text-white mb-2 sm:mb-3 text-base sm:text-lg">Phone</h5>
-                  <a 
-                    href="tel:+919526191616" 
-                    className="text-white hover:text-gray-300 transition-colors duration-300 text-sm sm:text-base md:text-lg touch-target inline-block hover:underline"
-                  >
+                  <a href="tel:+919526191616" className="text-white hover:text-gray-300 transition-colors duration-300 text-sm sm:text-base md:text-lg touch-target inline-block hover:underline">
                     +91 95261 91616
                   </a>
                 </div>
@@ -181,8 +165,6 @@ Message: ${formData.message || 'No message provided'}`;
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
