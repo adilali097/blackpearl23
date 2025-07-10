@@ -127,9 +127,7 @@ Message: ${formData.message || 'No message provided'}`;
                 
                 <div>
                   <h5 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Phone</h5>
-                  <a href="tel:+919048191616" className="text-white hover:underline text-xs sm:text-sm md:text-base touch-target">
-                    +91 904 819 1616
-                  </a>
+                  <a href="tel:+919048191616" className="text-white hover:underline text-xs sm:text-sm md:text-base touch-target">+91 95261 91616</a>
                 </div>
                 
                 <div>
