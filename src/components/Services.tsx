@@ -1,52 +1,32 @@
-
 import React from "react";
-import { 
-  Scale, 
-  Calculator, 
-  Shield, 
-  FileText, 
-  TrendingUp, 
-  Users,
-  Building2,
-  Award
-} from "lucide-react";
-
+import { Scale, Calculator, Shield, FileText, TrendingUp, Users, Building2, Award } from "lucide-react";
 const Services = () => {
-  const services = [
-    {
-      icon: Users,
-      title: "Consultancy and Advisory Services",
-      description: "Expert guidance to aid informed decision-making for businesses and individuals."
-    },
-    {
-      icon: TrendingUp,
-      title: "Business Structuring",
-      description: "Conducting market analysis, project reports, investor pitches, valuations, audits, and aiding in fundraising."
-    },
-    {
-      icon: Building2,
-      title: "Entity Registration Services",
-      description: "Assisting in choosing the right organizational structure. Includes: Partnership, LLP, and Company Registrations; Entity Conversions."
-    },
-    {
-      icon: Award,
-      title: "Licenses and Registrations",
-      description: "Facilitating registrations for trademarks, copyrights, patents, ISO, GST, Start-ups, IEC, FSSAI, RERA, MSME, and Property."
-    },
-    {
-      icon: FileText,
-      title: "Business Agreements' Documentation",
-      description: "Crafting crucial legal documents for business clarity and protection. Includes: Rental Agreements, Partnership Deeds, MOUs, Franchise Agreements, Investor Agreements, Share Purchase Agreements, Distribution Agreements, Settlement Deeds, Power Of Attorneys, Joint Venture Agreements, Take Over Agreements, Brand Endorsement Agreements."
-    },
-    {
-      icon: Scale,
-      title: "Litigation, Arbitration, and Settlement",
-      description: "Resolving legal disputes within or involving companies."
-    }
-  ];
-
-  return (
-    <section id="services" className="w-full bg-black py-12 sm:py-16 lg:py-20">
+  const services = [{
+    icon: Users,
+    title: "Consultancy and Advisory Services",
+    description: "Expert guidance to aid informed decision-making for businesses and individuals."
+  }, {
+    icon: TrendingUp,
+    title: "Business Structuring",
+    description: "Conducting market analysis, project reports, investor pitches, valuations, audits, and aiding in fundraising."
+  }, {
+    icon: Building2,
+    title: "Entity Registration Services",
+    description: "Assisting in choosing the right organizational structure. Includes: Partnership, LLP, and Company Registrations; Entity Conversions."
+  }, {
+    icon: Award,
+    title: "Licenses and Registrations",
+    description: "Facilitating registrations for trademarks, copyrights, patents, ISO, GST, Start-ups, IEC, FSSAI, RERA, MSME, and Property."
+  }, {
+    icon: FileText,
+    title: "Business Agreements' Documentation",
+    description: "Crafting crucial legal documents for business clarity and protection. Includes: Rental Agreements, Partnership Deeds, MOUs, Franchise Agreements, Investor Agreements, Share Purchase Agreements, Distribution Agreements, Settlement Deeds, Power Of Attorneys, Joint Venture Agreements, Take Over Agreements, Brand Endorsement Agreements."
+  }, {
+    icon: Scale,
+    title: "Litigation, Arbitration, and Settlement",
+    description: "Resolving legal disputes within or involving companies."
+  }];
+  return <section id="services" className="w-full bg-black py-12 sm:py-16 lg:py-20">
       <div className="mobile-container">
         <div className="max-w-5xl mx-auto text-center mb-8 sm:mb-12 md:mb-16 animate-on-scroll px-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 sm:mb-6">
@@ -70,9 +50,8 @@ const Services = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {services.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <div key={service.title} className="bg-gray-900 border border-gray-700 rounded-xl p-4 sm:p-6 transition-all duration-300 hover:transform hover:translate-y-[-4px] hover:shadow-xl touch-friendly">
+            const IconComponent = service.icon;
+            return <div key={service.title} className="bg-gray-900 border border-gray-700 rounded-xl p-4 sm:p-6 transition-all duration-300 hover:transform hover:translate-y-[-4px] hover:shadow-xl touch-friendly">
                   <div className="mb-3 sm:mb-4">
                     <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                   </div>
@@ -82,9 +61,8 @@ const Services = () => {
                   <p className="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed">
                     {service.description}
                   </p>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </div>
 
@@ -93,14 +71,11 @@ const Services = () => {
             <h4 className="text-lg sm:text-xl md:text-2xl font-display font-semibold text-white mb-3 sm:mb-4 md:mb-6">
               What Sets Us Apart
             </h4>
-            <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg max-w-3xl mx-auto">
-              Our method is rooted in honest, straightforward advice and tailored strategies designed to align with your life and business goals. We help you avoid common pitfalls and uncover new opportunities through clear, confident guidance.
-            </p>
+            <p className="text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg max-w-3xl mx-auto">No fluff. No recycled playbooks. Every client engagement is rooted in a clear objective: to build legally strong, financially sound, and strategically scalable businesses.
+We’re not here for vanity metrics or surface-level advice—we’re here for long-term equity, market positioning, and real leverage.</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
