@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Colus';
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gothic Century';
+  src: url('https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 95%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 95%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 0% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-black text-white font-gothic antialiased;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+  }
+
+  @media (max-width: 640px) {
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
+}
+
+@layer components {
+  .text-mask-image {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pulse-chip {
+    @apply inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-xs font-medium bg-gray-800 text-white border border-gray-600 transition-all duration-300 hover:bg-gray-700 hover:scale-105 cursor-pointer;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight text-white leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-base sm:text-lg md:text-xl text-gray-300 mt-4 max-w-3xl leading-relaxed;
+  }
+
+  .glass-card {
+    @apply bg-gray-900 backdrop-blur-sm border border-gray-700 rounded-xl sm:rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] hover:bg-gray-800;
+  }
+
+  .feature-card {
+    @apply p-4 sm:p-6 rounded-xl sm:rounded-2xl transition-all duration-500 hover:translate-y-[-8px] bg-gray-900 cursor-pointer border border-gray-700;
+  }
+
+  .feature-card:hover {
+    @apply shadow-2xl;
+  }
+  
+  .button-primary {
+    @apply bg-white hover:bg-gray-200 text-black font-medium py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-2xl transform hover:scale-[1.05] active:scale-[0.98] relative overflow-hidden text-sm sm:text-base;
+  }
+
+  .button-secondary {
+    @apply bg-transparent border border-white hover:bg-white hover:text-black text-white font-medium py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 hover:scale-[1.02] text-sm sm:text-base;
+  }
+  
+  .nav-link {
+    @apply relative text-white hover:text-gray-300 py-2 transition-all duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full text-sm sm:text-base;
+  }
+
+  /* Enhanced mobile responsiveness */
+  .mobile-container {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .mobile-text {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .mobile-heading {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  /* Grid responsiveness */
+  .responsive-grid-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .responsive-grid-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .responsive-grid-4 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6;
+  }
+
+  /* Enhanced shadow effects */
+  .shadow-elegant {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-elegant-hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Mobile-optimized interactive elements */
+  .interactive-element {
+    @apply transition-all duration-300 cursor-pointer touch-manipulation;
+  }
+
+  .interactive-element:hover {
+    @apply transform scale-[1.02];
+  }
+
+  /* Mobile touch targets */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+  }
+}
+
+/* Enhanced mobile touch interactions */
+.touch-friendly {
+  @apply touch-manipulation select-none;
+}
+
+/* Mobile-first animations */
+.image-scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.95) rotate(-1deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile-optimized stagger animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Enhanced fade-in animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Enhanced mobile viewport management */
+@media (max-width: 375px) {
+  .section-container {
+    @apply px-2 py-4;
+  }
+  
+  .mobile-container {
+    @apply px-2;
+  }
+  
+  .section-title {
+    @apply text-lg leading-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-xs leading-relaxed;
+  }
+  
+  /* Extra compact buttons for very small screens */
+  .button-primary, .button-secondary {
+    @apply py-3 px-4 text-sm;
+  }
+}
+
+/* Extra small mobile optimizations */
+@media (max-width: 480px) {
+  .section-container {
+    @apply px-3 py-6;
+  }
+  
+  .mobile-container {
+    @apply px-3;
+  }
+  
+  .section-title {
+    @apply text-xl leading-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-sm leading-relaxed;
+  }
+  
+  /* Better mobile grid spacing */
+  .responsive-grid-2, .responsive-grid-3, .responsive-grid-4 {
+    @apply gap-3;
+  }
+  
+  /* Improved mobile cards */
+  .feature-card, .glass-card {
+    @apply p-3 rounded-lg;
+  }
+  
+  /* Better mobile form inputs */
+  input, textarea, select {
+    @apply py-3 px-3 text-sm;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  .section-container {
+    @apply px-4 py-8;
+  }
+  
+  .button-primary, .button-secondary {
+    @apply w-full text-center justify-center min-h-[48px];
+  }
+  
+  /* Better touch targets for mobile */
+  .nav-link, button, a {
+    @apply touch-manipulation min-h-[48px] flex items-center justify-center;
+  }
+  
+  /* Optimize text sizes for mobile readability */
+  .section-title {
+    @apply text-2xl leading-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-base leading-relaxed;
+  }
+
+  /* Mobile form optimizations */
+  input, textarea, select {
+    @apply text-base min-h-[48px] touch-manipulation; 
+    font-size: 16px !important; /* Prevents iOS zoom */
+  }
+  
+  /* Mobile card optimizations */
+  .feature-card {
+    @apply p-4 rounded-xl;
+  }
+  
+  .glass-card {
+    @apply p-4 rounded-xl;
+  }
+
+  /* Mobile navigation optimizations */
+  .mobile-menu {
+    @apply fixed inset-x-0 top-16 bg-white shadow-lg z-40;
+  }
+
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  /* Better button spacing */
+  .button-primary, .button-secondary {
+    @apply py-4 px-6 mb-4;
+  }
+
+  /* Improved mobile grid gaps */
+  .responsive-grid-2, .responsive-grid-3, .responsive-grid-4 {
+    @apply gap-4;
+  }
+  
+  /* Touch-friendly elements */
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px];
+  }
+  
+  /* Better mobile image handling */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Improved mobile typography */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Better mobile scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-container {
+    @apply px-6 py-12;
+  }
+  
+  .feature-card {
+    @apply p-5;
+  }
+  
+  /* Better tablet grid spacing */
+  .responsive-grid-2, .responsive-grid-3, .responsive-grid-4 {
+    @apply gap-6;
+  }
+}
+
+/* Desktop optimizations */
+@media (min-width: 1025px) {
+  .section-container {
+    @apply px-8 py-16;
+  }
+  
+  /* Optimal desktop grid spacing */
+  .responsive-grid-2, .responsive-grid-3, .responsive-grid-4 {
+    @apply gap-8;
+  }
+}
+
+/* Disable parallax on mobile for better performance */
+@media (max-width: 768px) {
+  .parallax {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Enhanced mobile performance optimizations */
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Reduce animations on mobile for better performance */
+  .animate-fade-in, .fadeIn {
+    animation-duration: 0.3s;
+  }
+  
+  /* Better mobile hover states */
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  .hover\:translate-y-\[-4px\]:hover {
+    transform: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  /* Optimize for print */
+  * {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Dark mode specific mobile optimizations */
+@media (prefers-color-scheme: dark) and (max-width: 640px) {
+  /* Ensure better contrast on mobile dark mode */
+  .text-gray-300 {
+    @apply text-gray-200;
+  }
+  
+  .text-gray-400 {
+    @apply text-gray-300;
+  }
+}
