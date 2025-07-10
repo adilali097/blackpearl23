@@ -12,8 +12,8 @@ const Footer = () => {
               We're here to guide you through the complexities of legal and financial matters with clarity and confidence.
             </p>
             <div className="text-xs sm:text-sm text-gray-500">
-              <p className="font-semibold text-white mb-1">BLACK PEARL ASSOCIATES</p>
-              <p>Legal & Financial Excellence</p>
+              <p className="font-semibold text-white mb-1"><img src="https://i.ibb.co/ymdHpZNN/PNG.png" /></p>
+              <p>Corporate Law & Tax Consultation</p>
             </div>
           </div>
           
