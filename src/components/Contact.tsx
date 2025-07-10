@@ -133,7 +133,7 @@ Message: ${formData.message || 'No message provided'}`;
                 <div>
                   <h5 className="font-semibold text-white mb-1 sm:mb-2 text-sm sm:text-base">Offices</h5>
                   <div className="space-y-1 text-gray-300">
-                    <p className="text-xs sm:text-sm md:text-base">Legal & Financial Excellence</p>
+                    <p className="text-xs sm:text-sm md:text-base"> Room no: 73/104, City Center, Pavangad, Puthyangadi (P O), Calicut, Kerala - 673021</p>
                   </div>
                 </div>
               </div>
