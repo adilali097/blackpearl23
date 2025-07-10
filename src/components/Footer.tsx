@@ -30,8 +30,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-2 sm:mb-3 md:mb-4 text-xs sm:text-sm md:text-base">Contact</h4>
             <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-400">
-              <p><a href="mailto:info@blackpearlassociates.com" className="hover:text-white transition-colors touch-target block py-1 break-all">info@blackpearlassociates.com</a></p>
-              <p><a href="tel:+919048191616" className="hover:text-white transition-colors touch-target block py-1">+91 904 819 1616</a></p>
+              <p><a href="mailto:Hello@blackpearlassociates.com" className="hover:text-white transition-colors touch-target block py-1 break-all">Hello@blackpearlassociates.com</a></p>
+              <p><a href="tel:+919526191616" className="hover:text-white transition-colors touch-target block py-1">+91 95261 91616</a></p>
               <div className="mt-2 sm:mt-3">
                 <p className="text-white font-medium text-xs sm:text-sm">Excellence in:</p>
                 <p className="text-xs sm:text-sm">Legal & Financial Services</p>
