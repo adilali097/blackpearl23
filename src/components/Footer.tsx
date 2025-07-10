@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="mobile-container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
           <div className="sm:col-span-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold mb-2 sm:mb-3 md:mb-4">Black Pearl Associates</h3>
+            <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold mb-2 sm:mb-3 md:mb-4"><img src="https://i.ibb.co/ymdHpZNN/PNG.png" /></h3>
             <p className="text-gray-400 mb-2 sm:mb-3 md:mb-4 max-w-md text-xs sm:text-sm md:text-base leading-relaxed">
               We're here to guide you through the complexities of legal and financial matters with clarity and confidence.
             </p>
             <div className="text-xs sm:text-sm text-gray-500">
-              <p className="font-semibold text-white mb-1"><img src="https://i.ibb.co/ymdHpZNN/PNG.png" /></p>
+              <p className="font-semibold text-white mb-1">Black Pearl</p>
               <p>Corporate Law & Tax Consultation</p>
             </div>
           </div>
