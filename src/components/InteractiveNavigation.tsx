@@ -82,58 +82,59 @@ const InteractiveNavigation = () => {
 
   return (
     <>
-      {/* Back to Top Button */}
+      {/* Back to Top Button - Modern Design */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-white text-black p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 touch-target"
+        className="fixed bottom-6 right-6 z-50 bg-white/90 backdrop-blur-xl text-black p-4 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 hover:bg-white active:scale-95 touch-target border border-white/20"
         aria-label="Back to top"
       >
-        <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5" />
+        <ChevronUp className="w-5 h-5" />
       </button>
 
-      {/* Section Navigation Dots - Desktop Only */}
-      <div className="hidden lg:flex fixed right-6 top-1/2 transform -translate-y-1/2 z-40 flex-col space-y-3">
-        <div className="bg-white/10 backdrop-blur-md rounded-full py-4 px-2">
-          {sections.map((section) => (
+      {/* Section Navigation Dots - Modern Design */}
+      <div className="hidden lg:flex fixed right-8 top-1/2 transform -translate-y-1/2 z-40 flex-col space-y-2">
+        <div className="bg-black/20 backdrop-blur-2xl rounded-3xl py-6 px-3 border border-white/10 shadow-2xl">
+          {sections.map((section, index) => (
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className={`group relative w-3 h-3 mb-3 last:mb-0 rounded-full transition-all duration-300 hover:scale-125 ${
+              className={`group relative w-4 h-4 mb-4 last:mb-0 rounded-full transition-all duration-500 hover:scale-150 ${
                 activeSection === section.id
-                  ? "bg-white shadow-lg"
-                  : "bg-white/30 hover:bg-white/60"
+                  ? "bg-white shadow-2xl scale-125"
+                  : "bg-white/40 hover:bg-white/70 backdrop-blur-sm"
               }`}
               aria-label={`Go to ${section.label}`}
               title={section.label}
             >
-              <div className="absolute right-6 top-1/2 transform -translate-y-1/2 bg-black text-white px-2 py-1 rounded text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              <div className="absolute right-8 top-1/2 transform -translate-y-1/2 bg-black/90 backdrop-blur-lg text-white px-3 py-2 rounded-xl text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none border border-white/20 shadow-xl">
                 {section.label}
+                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 w-2 h-2 bg-black/90 rotate-45 border-l border-b border-white/20"></div>
               </div>
             </button>
           ))}
         </div>
       </div>
 
-      {/* Mobile Progress Indicator */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 h-1 bg-gray-800">
+      {/* Mobile Progress Indicator - Modern Design */}
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 h-1 bg-black/20 backdrop-blur-sm">
         <div 
-          className="h-full bg-white transition-all duration-150"
+          className="h-full bg-gradient-to-r from-white via-gray-200 to-white transition-all duration-300 shadow-lg"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>
 
-      {/* Mobile Quick Navigation - Bottom Sheet Style */}
-      <div className="lg:hidden fixed bottom-4 left-4 right-4 z-40">
-        <div className="bg-black/80 backdrop-blur-md rounded-xl p-2 mx-auto max-w-sm">
-          <div className="flex justify-between items-center space-x-1">
+      {/* Mobile Quick Navigation - Modern Design */}
+      <div className="lg:hidden fixed bottom-6 left-4 right-4 z-40">
+        <div className="bg-black/80 backdrop-blur-2xl rounded-2xl p-3 mx-auto max-w-md border border-white/10 shadow-2xl">
+          <div className="flex justify-between items-center space-x-2">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`flex-1 py-2 px-1 rounded-lg text-xs font-medium transition-all duration-300 touch-target min-h-[40px] ${
+                className={`flex-1 py-3 px-2 rounded-xl text-xs font-semibold transition-all duration-300 touch-target min-h-[48px] ${
                   activeSection === section.id
-                    ? "bg-white text-black"
-                    : "text-white hover:bg-white/20"
+                    ? "bg-white text-black shadow-lg scale-105"
+                    : "text-white hover:bg-white/20 hover:scale-102"
                 }`}
                 aria-label={`Go to ${section.label}`}
               >
