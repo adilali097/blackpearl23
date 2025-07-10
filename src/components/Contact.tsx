@@ -129,10 +129,7 @@ Message: ${formData.message || 'No message provided'}`;
               </h4>
               
               <div className="space-y-6 sm:space-y-8">
-                <div className="text-center lg:text-left">
-                  <h5 className="font-semibold text-white mb-2 sm:mb-3 text-base sm:text-lg">Company</h5>
-                  <p className="text-gray-300 text-sm sm:text-base md:text-lg font-medium">BLACK PEARL ASSOCIATES</p>
-                </div>
+                
                 
                 <div className="text-center lg:text-left">
                   <h5 className="font-semibold text-white mb-2 sm:mb-3 text-base sm:text-lg">Email</h5>
