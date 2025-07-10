@@ -85,9 +85,7 @@ Message: ${formData.message || 'No message provided'}`;
                 </div>
 
                 <div>
-                  <label htmlFor="companyName" className="block text-xs sm:text-sm font-medium text-white mb-1 sm:mb-2">
-                    Company Name
-                  </label>
+                  <label htmlFor="companyName" className="block text-xs sm:text-sm font-medium text-white mb-1 sm:mb-2">Email</label>
                   <Input type="text" id="companyName" name="companyName" value={formData.companyName} onChange={handleChange} className="w-full bg-gray-800 border-gray-600 text-white min-h-[48px] text-sm sm:text-base focus:ring-2 focus:ring-white focus:border-transparent" />
                 </div>
 
