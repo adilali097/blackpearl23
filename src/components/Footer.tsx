@@ -34,7 +34,7 @@ const Footer = () => {
               <p><a href="tel:+919526191616" className="hover:text-white transition-colors touch-target block py-1">+91 95261 91616</a></p>
               <div className="mt-2 sm:mt-3">
                 <p className="text-white font-medium text-xs sm:text-sm">Excellence in:</p>
-                <p className="text-xs sm:text-sm">Legal & Financial Services</p>
+                <p className="text-xs sm:text-sm">Corporate Law & Tax Consultation</p>
               </div>
             </div>
           </div>
