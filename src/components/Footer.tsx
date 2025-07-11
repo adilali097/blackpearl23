@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="sm:col-span-2 text-center sm:text-left">
             <div className="mb-6 flex justify-center sm:justify-start">
               <img 
-                src="/lovable-uploads/37ce561c-6e1e-4a32-a2fa-0c0adbd8a720.png" 
+                src="https://i.ibb.co/tpnyCrjz/PNG.png" 
                 alt="Black Pearl Associates Logo" 
                 className="h-48 sm:h-56 md:h-64 lg:h-72 w-auto max-w-full"
               />
