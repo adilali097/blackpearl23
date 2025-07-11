@@ -26,10 +26,14 @@ const Footer = () => {
           <div className="text-center sm:text-left">
             <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Services</h4>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-400">
-              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Legal Consulting</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Financial Advisory</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Risk Management</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Investment Planning</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Consultancy & Advisory Services
+
+</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Business Structuring</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Entity Registration Services</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Licenses & Registrations</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Business Agreements & Documentation</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Litigation, Arbitration & Settlement</a></li>
             </ul>
           </div>
           
