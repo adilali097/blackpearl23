@@ -10,7 +10,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/37ce561c-6e1e-4a32-a2fa-0c0adbd8a720.png" 
                 alt="Black Pearl Associates Logo" 
-                className="h-12 sm:h-16 w-auto"
+                className="h-64 sm:h-80 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-2 sm:mb-3 md:mb-4 max-w-md text-xs sm:text-sm md:text-base leading-relaxed">
