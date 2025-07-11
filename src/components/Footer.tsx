@@ -46,16 +46,16 @@ const Footer = () => {
                 <p className="text-white font-medium text-sm sm:text-base">Excellence in:</p>
                 <p className="text-sm sm:text-base">Corporate Law & Tax Consultation</p>
    <a href="https://instagram.com/demo" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="32" style={{ filter: 'grayscale(100%)', verticalAlign: 'middle' }} />
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="32" style={{  verticalAlign: 'middle' }} />
 </a>
 <a href="https://linkedin.com/demo" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="32" style={{ filter: 'grayscale(100%)', verticalAlign: 'middle' }} />
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="32" style={{ verticalAlign: 'middle' }} />
 </a>
 <a href="https://youtube.com/demo" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
-  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="32" style={{ filter: 'grayscale(100%)', verticalAlign: 'middle' }} />
+  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="32" style={{ verticalAlign: 'middle' }} />
 </a>
 <a href="https://facebook.com/demo" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32" style={{ filter: 'grayscale(100%)', verticalAlign: 'middle' }} />
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32" style={{ verticalAlign: 'middle' }} />
 </a>
 
               </div>
