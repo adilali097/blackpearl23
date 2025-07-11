@@ -7,7 +7,14 @@ const Footer = () => {
       <div className="mobile-container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
           <div className="sm:col-span-2">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-display font-bold mb-2 sm:mb-3 md:mb-4">Black Pearl</h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/44a3e122-92fc-43a5-9711-2f69dea2de77.png" 
+                alt="Black Pearl Associates Logo" 
+                className="h-12 sm:h-16 md:h-20 w-auto mb-2"
+                style={{ maxWidth: '300px' }}
+              />
+            </div>
             <p className="text-gray-400 mb-2 sm:mb-3 md:mb-4 max-w-md text-xs sm:text-sm md:text-base leading-relaxed">
               We're here to guide you through the complexities of legal and financial matters with clarity and confidence.
             </p>

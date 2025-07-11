@@ -40,15 +40,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#hero" className="flex items-center touch-target">
               <img 
                 src="/lovable-uploads/44a3e122-92fc-43a5-9711-2f69dea2de77.png" 
                 alt="Black Pearl Associates Logo" 
-                className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
-                style={{ maxHeight: '96px', minHeight: '48px' }}
+                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
+                style={{ maxWidth: '400px', minWidth: '250px', height: 'auto' }}
               />
             </a>
           </div>
