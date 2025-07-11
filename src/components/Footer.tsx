@@ -45,23 +45,12 @@ const Footer = () => {
               <div className="mt-4 sm:mt-6">
                 <p className="text-white font-medium text-sm sm:text-base">Excellence in:</p>
                 <p className="text-sm sm:text-base">Corporate Law & Tax Consultation</p>
-                  <div style={{ backgroundColor: '#000', padding: '20px', textAlign: 'center' }}>
-      <a href="https://instagram.com/demo" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style={iconStyle} />
-      </a>
-      <a href="https://youtube.com/demo" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style={iconStyle} />
-      </a>
-      <a href="https://linkedin.com/demo" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style={iconStyle} />
-      </a>
-      <a href="https://facebook.com/demo" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style={iconStyle} />
-      </a>
-      <a href="https://x.com/demo" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" style={iconStyle} />
-      </a>
-    </div>
+<a href="https://instagram.com/demo" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="28" style={{filter:'invert(100%)', margin:'0 12px'}} /></a>
+
+<a href="https://linkedin.com/demo" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="28" style={{filter:'invert(100%)', margin:'0 12px'}} /></a>
+
+<a href="https://x.com/demo" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" width="28" style={{filter:'invert(100%)', margin:'0 12px'}} /></a>
+
 
               </div>
             </div>
