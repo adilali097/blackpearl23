@@ -1,52 +1,53 @@
+
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6 sm:py-8 md:py-12">
-      <div className="mobile-container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
-          <div className="sm:col-span-2">
-            <div className="mb-4">
+    <footer className="bg-gray-900 text-white py-8 sm:py-12 md:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
+          <div className="sm:col-span-2 text-center sm:text-left">
+            <div className="mb-6 flex justify-center sm:justify-start">
               <img 
                 src="/lovable-uploads/37ce561c-6e1e-4a32-a2fa-0c0adbd8a720.png" 
                 alt="Black Pearl Associates Logo" 
-                className="h-64 sm:h-80 w-auto"
+                className="h-48 sm:h-56 md:h-64 lg:h-72 w-auto max-w-full"
               />
             </div>
-            <p className="text-gray-400 mb-2 sm:mb-3 md:mb-4 max-w-md text-xs sm:text-sm md:text-base leading-relaxed">
+            <p className="text-gray-400 mb-4 sm:mb-6 max-w-md text-sm sm:text-base leading-relaxed mx-auto sm:mx-0">
               We're here to guide you through the complexities of legal and financial matters with clarity and confidence.
             </p>
-            <div className="text-xs sm:text-sm text-gray-500">
-              <p className="font-semibold text-white mb-1">Black Pearl</p>
+            <div className="text-sm sm:text-base text-gray-500">
+              <p className="font-semibold text-white mb-2">Black Pearl</p>
               <p>Corporate Law & Tax Consultation</p>
             </div>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-2 sm:mb-3 md:mb-4 text-xs sm:text-sm md:text-base">Services</h4>
-            <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-400">
-              <li><a href="#services" className="hover:text-white transition-colors touch-target block py-1">Legal Consulting</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors touch-target block py-1">Financial Advisory</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors touch-target block py-1">Risk Management</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors touch-target block py-1">Investment Planning</a></li>
+          <div className="text-center sm:text-left">
+            <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Services</h4>
+            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-400">
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Legal Consulting</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Financial Advisory</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Risk Management</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors min-h-[44px] block py-1">Investment Planning</a></li>
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-2 sm:mb-3 md:mb-4 text-xs sm:text-sm md:text-base">Contact</h4>
-            <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-400">
-              <p><a href="mailto:Hello@blackpearlassociates.com" className="hover:text-white transition-colors touch-target block py-1 break-all">Hello@blackpearlassociates.com</a></p>
-              <p><a href="tel:+919526191616" className="hover:text-white transition-colors touch-target block py-1">+91 95261 91616</a></p>
-              <div className="mt-2 sm:mt-3">
-                <p className="text-white font-medium text-xs sm:text-sm">Excellence in:</p>
-                <p className="text-xs sm:text-sm">Corporate Law & Tax Consultation</p>
+          <div className="text-center sm:text-left">
+            <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Contact</h4>
+            <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-400">
+              <p><a href="mailto:Hello@blackpearlassociates.com" className="hover:text-white transition-colors min-h-[44px] block py-1 break-all">Hello@blackpearlassociates.com</a></p>
+              <p><a href="tel:+919526191616" className="hover:text-white transition-colors min-h-[44px] block py-1">+91 95261 91616</a></p>
+              <div className="mt-4 sm:mt-6">
+                <p className="text-white font-medium text-sm sm:text-base">Excellence in:</p>
+                <p className="text-sm sm:text-base">Corporate Law & Tax Consultation</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-4 sm:mt-6 md:mt-8 pt-4 sm:pt-6 md:pt-8 text-center">
-          <p className="text-xs sm:text-sm text-gray-500">
+        <div className="border-t border-gray-700 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
+          <p className="text-sm sm:text-base text-gray-500">
             © 2024 Black Pearl Associates. All rights reserved.
           </p>
         </div>

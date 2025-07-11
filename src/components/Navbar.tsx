@@ -40,15 +40,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28">
+        <div className="flex items-center justify-between h-16 sm:h-20 md:h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#hero" className="flex items-center touch-target">
+            <a href="#hero" className="flex items-center min-h-[44px]">
               <img 
                 src="/lovable-uploads/44a3e122-92fc-43a5-9711-2f69dea2de77.png" 
                 alt="Black Pearl Associates Logo" 
-                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
-                style={{ maxWidth: '400px', minWidth: '250px', height: 'auto' }}
+                className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[200px] sm:max-w-[300px] md:max-w-[400px]"
               />
             </a>
           </div>
@@ -60,7 +59,7 @@ const Navbar = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="nav-link text-black hover:text-gray-600 px-2 py-2 text-sm lg:text-base font-medium transition-colors duration-300 touch-target"
+                  className="nav-link text-black hover:text-gray-600 px-2 py-2 text-sm lg:text-base font-medium transition-colors duration-300 min-h-[44px] flex items-center"
                   onClick={closeMenu}
                 >
                   {item.label}
@@ -73,7 +72,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 lg:px-8 rounded-full transition-all duration-300 text-sm lg:text-base touch-target"
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 lg:px-8 rounded-full transition-all duration-300 text-sm lg:text-base min-h-[44px] flex items-center"
             >
               Get Started
             </a>
@@ -83,7 +82,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-3 rounded-md text-black hover:text-gray-600 focus:outline-none transition-colors duration-300 touch-target"
+              className="inline-flex items-center justify-center p-3 rounded-md text-black hover:text-gray-600 focus:outline-none transition-colors duration-300 min-h-[44px] min-w-[44px]"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -108,7 +107,7 @@ const Navbar = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-black hover:text-gray-600 block px-4 py-4 text-lg font-medium transition-colors duration-300 touch-target rounded-lg hover:bg-gray-100"
+              className="text-black hover:text-gray-600 block px-4 py-4 text-lg font-medium transition-colors duration-300 min-h-[48px] flex items-center rounded-lg hover:bg-gray-100"
               onClick={closeMenu}
             >
               {item.label}
@@ -117,7 +116,7 @@ const Navbar = () => {
           <div className="px-4 py-4">
             <a
               href="#contact"
-              className="bg-black hover:bg-gray-800 text-white font-medium py-4 px-6 rounded-full transition-all duration-300 text-base inline-block w-full text-center touch-target"
+              className="bg-black hover:bg-gray-800 text-white font-medium py-4 px-6 rounded-full transition-all duration-300 text-base inline-block w-full text-center min-h-[48px] flex items-center justify-center"
               onClick={closeMenu}
             >
               Get Started
