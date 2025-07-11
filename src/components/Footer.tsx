@@ -57,9 +57,7 @@ const Footer = () => {
 <a href="https://facebook.com/demo" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
   <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="32" style={{ filter: 'grayscale(100%)', verticalAlign: 'middle' }} />
 </a>
-<a href="https://twitter.com/demo" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
-  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X/Twitter" width="32" style={{ filter: 'grayscale(100%)', verticalAlign: 'middle' }} />
-</a>
+
               </div>
             </div>
           </div>
