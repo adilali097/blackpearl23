@@ -1,11 +1,17 @@
 import React from "react";
+
 const Footer = () => {
-  return <footer className="bg-gray-900 text-white py-6 sm:py-8 md:py-12">
+  return (
+    <footer className="bg-gray-900 text-white py-6 sm:py-8 md:py-12">
       <div className="mobile-container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
           <div className="sm:col-span-2">
             <div className="mb-4">
-              
+              <img 
+                src="/lovable-uploads/37ce561c-6e1e-4a32-a2fa-0c0adbd8a720.png" 
+                alt="Black Pearl Associates Logo" 
+                className="h-12 sm:h-16 w-auto"
+              />
             </div>
             <p className="text-gray-400 mb-2 sm:mb-3 md:mb-4 max-w-md text-xs sm:text-sm md:text-base leading-relaxed">
               We're here to guide you through the complexities of legal and financial matters with clarity and confidence.
@@ -45,6 +51,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
