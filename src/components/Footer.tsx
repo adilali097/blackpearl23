@@ -45,6 +45,12 @@ const Footer = () => {
               <div className="mt-4 sm:mt-6">
                 <p className="text-white font-medium text-sm sm:text-base">Excellence in:</p>
                 <p className="text-sm sm:text-base">Corporate Law & Tax Consultation</p>
+<a href="https://instagram.com/demo" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="32" style={{filter:"grayscale(100%)"}}/></a>
+
+<a href="https://linkedin.com/demo" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="32" style={{filter:"grayscale(100%)"}}/></a>
+
+<a href="https://instagram.com/demo" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="32" style={{filter:"grayscale(100%)"}}/></a>
+
               </div>
             </div>
           </div>
