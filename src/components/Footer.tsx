@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Footer = () => {
@@ -9,9 +8,9 @@ const Footer = () => {
           <div className="sm:col-span-2">
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/44a3e122-92fc-43a5-9711-2f69dea2de77.png" 
+                src="/logo-text-only.svg" 
                 alt="Black Pearl Associates Logo" 
-                className="h-12 sm:h-16 md:h-20 w-auto mb-2"
+                className="h-12 sm:h-16 md:h-20 w-auto mb-2 filter brightness-0 invert"
                 style={{ maxWidth: '300px' }}
               />
             </div>
